@@ -1,0 +1,101 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta meta name="viewport" content="width=device-width, user-scalable=no"/>
+<style>
+.fields {
+height:50px;
+width:355px;
+border:1.5px solid #64dd17;
+margin:10px;
+border-radius:3px;
+font-size:20px;
+padding:20px;
+color:#333;
+pointer: none;
+}
+article {
+  -webkit-columns: 2 300px;
+  -moz-columns: 2 300px;
+  columns: 2 300px;
+}
+
+input:focus {
+box-shadow: 0 0 15px #64dd17;
+}
+textarea {
+height:200px;
+width:355px;
+border:1.5px solid #64dd17;
+margin:10px;
+border-radius:3px;
+font-size:20px;
+padding:15px;
+color:#333;
+pointer: none;
+}
+textarea:focus {
+box-shadow: 0 0 15px #64dd17;
+}
+label {
+margin-left:10px;
+font-family: sans-serif;
+}
+.submit {
+color:#fff;
+background:#64dd17;
+height:40px;
+width:100px;
+border-radius:20px;
+border: transparent;
+font-size:16px;
+
+}
+div a {
+text-decoration:none;
+color:#64dd17;
+}
+</style>
+
+</head>
+<body>
+<article>
+<div style="margin-left:10px; font-family: sans-serif; text-size-adjust:none;">
+<p style="font-weight:500; font-size:20px;">Dr. Y.VIJAYALATHA REDDY</p>
+<span>Chair, SAC, IEEE Hyderabad</span><br>
+<span><a href="tel:+919876543210">+91 9876543210</a></span><br>
+<span><a href="mailto:info@ieeehyderabad.org">info@ieeehyderabad.org</a></span><br><br><br>
+
+<p style="font-weight:500; font-size:20px;">Dr. Y.VIJAYALATHA REDDY</p>
+<span>Chair, SAC, IEEE Hyderabad</span><br>
+<span><a href="tel:+919876543210" >+91 9876543210</a></span><br>
+<span><a href="mailto:info@ieeehyderabad.org">info@ieeehyderabad.org</a></span><br><br>
+
+<p style="font-weight:500; font-size:20px;">Dr. Y.VIJAYALATHA REDDY</p>
+<span>Chair, SAC, IEEE Hyderabad</span><br>
+<span><a href="tel:+919876543210">+91 9876543210</a></span><br>
+<span><a href="mailto:info@ieeehyderabad.org">info@ieeehyderabad.org</a></span><br>
+</div><br>
+<hr width="80%" align="center">
+<div style="margin-top:50px;">
+<form action="mailer.php" method="post">
+<label align="left">Full Name <span style="color:red;">*</span></label><br>
+<input class="fields" type="text" name="name">
+<br>
+<label>Email <span style="color:red;">*</span></label><br>
+<input class="fields" type="email" name="email">
+<br>
+<label>Message <span style="color:red;">*</span></label><br>
+<textarea name="message"></textarea>
+<br>
+<center><input type="submit" class="submit" value="SUBMIT">
+<input type="reset" class="submit" value="RESET"></center>
+</form>
+</div>
+<div style="margin-top:80px;">
+<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1903.2788123509927!2d78.4540202120798!3d17.43300487438577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb917c032e1475%3A0xd934a7d7f50a0119!2sThe+Plaza+Hotel!5e0!3m2!1sen!2sin!4v1562850533376!5m2!1sen!2sin" width="95%" height="500" frameborder="0" style="border:1.5px solid #64dd17; border-radius:5px;box-shadow: 0 0 10px #64dd17;" allowfullscreen></iframe><br>
+<p style="font-size:25px;font-family: sans-serif;">THE PLAZA HOTEL<br><span style="margin:50px; font-size:18px; font-weight:300;">Hyderabad</span></p>
+</center>
+</div></article>
+</body>
+</html>

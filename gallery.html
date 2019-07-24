@@ -1,297 +1,378 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta meta name="viewport" content="width=device-width, user-scalable=no"/>
 
-    <!-- Title -->
-    <title>Our Gallery</title>
-    <link rel="icon" href="./img/core-img/ic.png">
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+
+<title>GALLERY - SSC'19</title>
+<link rel="shortcut icon" href="favicon.ico"/>
+
+   <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://rawgit.com/fitodac/line-awesome/master/dist/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
+    <link rel="stylesheet" type="text/css" href="examples.min.css">
+ <link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" href="css/loader.css">
+
+
+
+
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+    <link href="https://fonts.googleais.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="images/gallery/gallery-grid.css">
+
+ <style>
+body, html {
+  height: 100%;
+  
+}
+      .jumbotron{
+      	background: url('https://picsum.photos/1400/700?random');
+      	color: #fff;
+      	height: 600px;
+      	display: flex;
+      	align-items: center;
+      }
+.bg {
+  /* The image used */
+  background: linear-gradient( rgba(27, 27, 27, 0.7), rgba(0, 0, 0, 0) ), url("css/cover.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: graysale(100%);
+  border-bottom: 2px solid #001263;
+  color: #fff;
+   height: 600px;
+   display: flex;
+   align-items: center;
+
+  
+}
+#about {
+padding-top:20%;
+}
+a.link, a.link:hover, a.link:active, a.link:visited{ 
+background-color:#fff;
+display: block;
+margin-top:20px;
+border-align:center;
+padding:10px; 
+border-radius:5px;
+text-align: center; 
+text-decoration: none;
+}
+
+ul.b {
+list-style-position: inside;
+padding-left:20px;
+}
+
+ @media (max-width: 991px) {	
+.bg { height: 25%; }
+.ssc {
+font-size:50px;
+}
+#about {
+padding-top:9%;
+}
+ul.b {
+list-style-position: inside;
+padding-left:30px;
+}
+}
+
+@media (max-width: 640px) {	
+.bg { height: 50%; }
+.ssc {
+font-size:45px;
+
+}
+#about {
+padding-top:20%;
+}
+ul.b {
+list-style-position: inside;
+padding-left:20px;
+}
+}
+
+.fa-facebook {
+    padding:10px 15px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;   
+    font-size:22px;
+    border:1px solid transparent;
+}
+
+.fa-facebook:hover {
+    background-color: #3d5b99;
+    border-radius: 50%;
+border:1px solid #001263;
+box-shadow:0 0 10px #001263
+}
+.fa-instagram {
+padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+   font-size:22px;
+border:1px solid transparent;
+
+}
+.fa-instagram:hover {
+    background-color: #eb8231;
+    border-radius: 50%;
+border:1px solid #001263;
+box-shadow:0 0 10px #001263
+}
+.fa-envelope {
+padding:10px 10px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+   font-size:22px;
+border:1px solid transparent;
+}
+.fa-envelope:hover {
+    background-color: #ff4444;
+    border-radius: 50%;
+border:1px solid #001263;
+box-shadow:0 0 10px #001263
+}
+
+    </style>
+
 </head>
-
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader"></div>
+
+
+<div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div>
+   <div class="loader-section section-right"></div></div>
+
+
+  <div class="navbar navbar-expand-sm bsnav bsnav-sticky bsnav-sticky-slide"><a class="navbar-brand" href="index.html">ieee hyd section</a>
+      <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-sm-end">
+         <ul class="navbar-nav navbar-mobile mr-0">
+<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+    <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0);">ABOUT US <i class="caret"></i></a>
+            <ul class="navbar-nav">
+ <li class="nav-item"><a class="nav-link" href="about.html">ABOUT SSC'19</a></li>
+ <li class="nav-item"><a class="nav-link" href="execom.html">EXECOM</a></li>
+              <li class="nav-item"><a class="nav-link" href="CodeOfConduct.html">CODE OF CONDUCT</a></li>
+</ul></li>
+<li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+<li class="nav-item"><a class="nav-link" href="sbawards.html">SB-AWARDS</a></li>
+          <li class="nav-item active"><a class="nav-link" href="">OUR GALLERY</a></li>
+<li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORSHIP</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">REGISTER</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+</ul>
+      </div>
     </div>
-    <!-- /Preloader -->
-    <!-- Header Area Start -->
-    <header class="header-area">
-        <div class="classy-nav-container breakpoint-off">
-            <div class="container">
-                <!-- Classy Menu -->
-                <nav class="classy-navbar justify-content-between" id="conferNav">
 
-                    <!-- Logo -->
-                    <a class="nav-brand" href="./index.html"><img src="./img/core-img/logo.png" alt=""></a>
 
-                    <!-- Navbar Toggler -->
-                    <div class="classy-navbar-toggler">
-                        <span class="navbarToggler"><span></span><span></span><span></span></span>
-                    </div>
+    <div class="bg">
+      <div class="container">
+        <p style="text-align:center;font-size:38px;font-weight:400;">OUR GALLERY</p>
 
-                    <!-- Menu -->
-                    <div class="classy-menu">
-                        <!-- Menu Close Button -->
-                        <div class="classycloseIcon">
-                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-                        </div>
-                        <!-- Nav Start -->
-                        <div class="classynav">
-                            <ul id="nav">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li>
-                                    <a href="#">About</a>
-                                    <ul class="dropdown">
-                                        <li><a href="about.html">- About Us</a></li>
-                                        <li><a href="schedule.html">- Schedule</a></li>
-                                        <li><a href="https://forms.gle/NgUZj1JGvysGiRCR6">- Register</a></li>
-                                        <li><a href="committee.html">- Committee</a></li>
-                                        <li><a href="gallery.html">- Our Gallery </a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="sbawards.html">SBAwards</a></li>
+      </div>
 
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                            <a href=" https://forms.gle/NgUZj1JGvysGiRCR6" class="btn confer-btn mt-3 mt-lg-0 ml-3 ml-lg-5">Register<i class="zmdi zmdi-long-arrow-right"></i></a>
-                        </div>
-                        <!-- Nav End -->
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <!-- Header Area End -->
-    <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bg-img bg-gradient-overlay jarallax" style="background-image: url(img/bg-img/27.jpg);">
-        <div class="container h-100">
-            <div class="row h-100 align-items-center">
-                <div class="col-12">
-                    <div class="breadcrumb-content">
-                        <h2 class="page-title">Gallery</h2>
-                        <nav aria-label="breadcrumb">
-                            <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Our Gallery</li>
-                            </ol>
-                        </nav>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Area End -->
-    <!--our gallery start-->
-    <br><br>
-
-    <!--  Gallery Area Start -->
-    <div class="our-gallery-area section-padding-0-85">
-        <div class="container-fluid">
-            <div class="row">
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/28.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/29.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/32.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/33.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-6">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/30.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-6">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/31.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/34.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/35.jpg" alt="">
-
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/36.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/37.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/38.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/39.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/40.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/41.jpg" alt="">
-                    </div>
-                </div>
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-6">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/42.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-6">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/43.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/44.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/48.jpg" alt="">
-
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/46.jpg" alt="">
-                    </div>
-                </div>
-
-                <!-- Single Gallery Thumb -->
-                <div class="col-12 col-sm-3">
-                    <div class="single-gallery-thumb wow fadeInUp" data-wow-delay="300ms">
-                        <img src="img/bg-img/47.jpg" alt="">
-                    </div>
-                </div>
-
-            </div>
-        </div>
     </div>
-    <!--  Gallery Area End -->
-    <!--our gallery end-->
-    <!-- Footer Area Start -->
+ <div id="about" style="">
+      <div class="container"></div>
+<div class="contaner gallery-container">
 
 
-    <footer class="footer-area bg-img bg-overlay-2 section-padding-100-0">
-        <!-- Main Footer Area -->
-        <div class="main-footer-area">
-            <div class="container">
-                <div class="col-12">
-                    <!-- Single Footer Widget Area -->
-                    <div class="col-12">
-                        <div class="single-footer-widget mb-60 wow fadeInUp" data-wow-delay="300ms">
-                            <!-- Footer Logo -->
-                            <a href="index.html" class="footer-logo"><img src="img/core-img/logo.png" alt=""></a>
-                            <p>IEEE Hyderabad Section is one of the most active sections of IEEE in India. IEEE was formally introduced in Hyderabad, in June 1981, when a group of engineers in Hyderabad decided to form an IEEE sub-Section here. This sub-Section was rapidly elevated to a full Section, in 1984 (the year of IEEE Centenary celebrations)</p>
+<p style=" text-align:center; font-family: sans-serif; font-size:30px;color:#5A5A5A;">OUR GALLERY</p>
+<hr style="background:#001263;width:80%;text-align:center; margin: 0 auto; height:2px;">
 
-                            <!-- Social Info -->
-                            <div class="social-info">
-                                <a href="https://www.facebook.com/IEEEHYDSSC"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href="https://www.instagram.com/section_student_congress_2019"><i class="zmdi zmdi-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
+    
+    <div class="tz-gallery" style="margin-top:50px">
 
-                </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/1.jpg">
+                    <img src="images/gallery/1.jpg" alt="Park">
+                </a>
             </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/2.jpg">
+                    <img src="images/gallery/2.jpg" alt="Bridge">
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+                <a class="lightbox" href="images/gallery/3.jpg">
+                    <img src="images/gallery/3.jpg" alt="Tunnel">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/4.jpg">
+                    <img src="images/gallery/4.jpg" alt="Coast">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/5.jpg">
+                    <img src="images/gallery/5.jpg" alt="Rails">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/6.jpg">
+                    <img src="images/gallery/6.jpg" alt="Traffic">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/7.jpg">
+                    <img src="images/gallery/7.jpg" alt="Rocks">
+                </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/8.jpg">
+                    <img src="images/gallery/8.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/9.jpg">
+                    <img src="images/gallery/9.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/10.jpg">
+                    <img src="images/gallery/10.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/11.jpg">
+                    <img src="images/gallery/11.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/12.jpg">
+                    <img src="images/gallery/12.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/13.jpg">
+                    <img src="images/gallery/13.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/14.jpg">
+                    <img src="images/gallery/14.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/15.jpg">
+                    <img src="images/gallery/15.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/16.jpg">
+                    <img src="images/gallery/16.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/17.jpg">
+                    <img src="images/gallery/17.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/18.jpg">
+                    <img src="images/gallery/18.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/19.jpg">
+                    <img src="images/gallery/19.jpg" alt="Benches">
+                </a>
+            </div>
+ <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/20.jpg">
+                    <img src="images/gallery/20.jpg" alt="Benches">
+                </a>
+            </div>
+ <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/21.jpg">
+                    <img src="images/gallery/21.jpg" alt="Benches">
+                </a>
+            </div>
+ <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/22.jpg">
+                    <img src="images/gallery/22.jpg" alt="Benches">
+                </a>
+            </div>
+    <div class="col-sm-6 col-md-4">
+                <a class="lightbox" href="images/gallery/23.jpg">
+                    <img src="images/gallery/23.jpg" alt="Benches">
+                </a>
+            </div>
+          
         </div>
-        <!-- Copywrite Area -->
-        <div class="container">
-            <div class="copywrite-content">
-                <div class="col-12">
-                    <!-- Copywrite Text -->
-                    <div class="col-12 ">
-                        <div class="copywrite-text">
-                            <p>
-                                &copy;
-                                <script>document.write(new Date().getFullYear());</script> IT Team of IEEE Hyderabad Section Student Congress 2019
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </footer>
-    <!-- Footer Area End -->
-    <!-- **** All JS Files ***** -->
-    <!-- jQuery 2.2.4 -->
-    <script src="js/jquery.min.js"></script>
-    <!-- Popper -->
-    <script src="js/popper.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- All Plugins -->
-    <script src="js/confer.bundle.js"></script>
-    <!-- Active -->
-    <script src="js/default-assets/active.js"></script>
+
+    </div>
+
+</div>
+
+
+
+    <div class="bsnav-mobile">
+      <div class="bsnav-mobile-overlay"></div>
+      <div class="navbar"></div>
+    </div>
+
+<footer class="footer-basic-centered">
+<div>	<p class="footer-company-motto">
+&nbsp IEEE Hyderabad Section is one of the most active sections of IEEE in India. IEEE was formally introduced in Hyderabad,
+ in June 1981, when a group of engineers in Hyderabad decided to form an IEEE sub-Section here. This sub-Section was rapidly elevated to a full Section,
+  in 1984 (the year of IEEE Centenary celebrations)</p>
+</div>
+<hr style="background:grey;" align="center">
+<div>		<p class="footer-links"><!--
+<a href="mailto:info@ieeehydssc.org">info@ieeehydssc.org |</a>    
+<a href="http://www.ieeehydssc.org/home.html">Home</a> |
+<a href="http://www.ieeehydssc.org/register.html">Register</a> |
+<a href="http://www.ieeehydssc.org/contact.html">Contact</a> |
+<a href="http://www.ieeehydssc.org/privacy-policy.html">Privacy Policy</a> |
+<a href="http://www.ieeehydssc.org//sitemap.xml">Sitemap</a> -->
+<a href="https://www.facebook.com/IEEEHYDSSC/" target="blank"><i class="fa fa-facebook"></i></a> 
+<a href="https://www.instagram.com/section_student_congress_2019/" target="_blank"><i class="fa fa-instagram"></i></a> 
+<a href="mailto:sac@ieee.org"><i class="fa fa-envelope"></i></a> 
+</p>
+</div>
+
+<div>	<p class="footer-company-name">
+© 2019 IT Team of IEEE Hyderabad Section Student Congress 2019 | All Rights Reserved </p>
+</div>
+
+		</footer>
+
+  
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://rawgit.com/fitodac/bsnav/master/dist/bsnav.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
 
 </body>
-
 </html>
