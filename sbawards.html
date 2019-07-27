@@ -1,334 +1,497 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta meta name="viewport" content="width=device-width, user-scalable=no"/>
-<title>SB AWARDS - SSC'19</title>
-<link rel="shortcut icon" href="favicon.ico"/>
 
-   <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta meta name="viewport" content="width=device-width, user-scalable=no" />
+    <title>SB AWARDS - SSC'19</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/fitodac/line-awesome/master/dist/css/line-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/bsnav.min.css">
     <link rel="stylesheet" type="text/css" href="examples.min.css">
- <link rel="stylesheet" type="text/css" href="css/footer.css">
-<link rel="stylesheet" href="css/loader.css">
-<link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/counter.css">
 
- <style>
-body, html {
-  height: 100%;
-  
-}
-      .jumbotron{
-      	background: url('https://picsum.photos/1400/700?random');
-      	color: #fff;
-      	height: 600px;
-      	display: flex;
-      	align-items: center;
-      }
-.bg {
-  /* The image used */
-  background: linear-gradient( rgba(218, 165, 32, 0.7), rgba(0, 0, 0, 0) ), url("css/cover.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: graysale(100%);
-  border-bottom: 2px solid #001263;
-  color: #fff;
-   height: 600px;
-   display: flex;
-   align-items: center;
-
-  
-}
-#about {
-padding-top:20%;
-}
-a.link, a.link:hover, a.link:active, a.link:visited{ 
-background-color:#fff;
-display: block;
-margin-top:20px;
-border-align:center;
-padding:10px; 
-border-radius:5px;
-text-align: center; 
-text-decoration: none;
-}
-
-ul.b {
-list-style-position: inside;
-padding-left:20px;
-}
-
-.live-now-text{
--webkit-animation:live 2s infinite;
-animation:live 2s infinite;
-font-weight:700;
-font-family:'roboto',sans-serif;
-line-spacing:1px;
-text-align:center;
-font-size:40px;
-
-}
-@-webkit-keyframes live{0%{color: yellow}50%{color: orange}100%{color:#65F984}}
-@keyframes live{0%{color: yellow;}50%{color: orange}100%{color: #65F984;}}
-
-
-
- @media (max-width: 991px) {	
-.bg { height: 25%; }
-.ssc {
-font-size:50px;
-}
-#about {
-padding-top:9%;
-}
-ul.b {
-list-style-position: inside;
-padding-left:30px;
-}
-}
-
-@media (max-width: 640px) {	
-.bg { height: 50%; }
-.ssc {
-font-size:45px;
-
-}
-#about {
-padding-top:20%;
-}
-ul.b {
-list-style-position: inside;
-padding-left:20px;
-}
-}
-.fa-facebook {
-    padding:10px 15px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;   
-    font-size:22px;
-    border:1px solid transparent;
-}
-
-.fa-facebook:hover {
-    background-color: #3d5b99;
-    border-radius: 50%;
-border:1px solid #001263;
-box-shadow:0 0 10px #001263
-}
-.fa-instagram {
-padding:10px 12px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-   font-size:22px;
-border:1px solid transparent;
-
-}
-.fa-instagram:hover {
-    background-color: #eb8231;
-    border-radius: 50%;
-border:1px solid #001263;
-box-shadow:0 0 10px #001263
-}
-.fa-envelope {
-padding:10px 10px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition: .5s;
-   font-size:22px;
-border:1px solid transparent;
-}
-.fa-envelope:hover {
-    background-color: #ff4444;
-    border-radius: 50%;
-border:1px solid #001263;
-box-shadow:0 0 10px #001263
-}
-
+    <style>
+    body,
+        html {
+            height: 100%;
+        }
+        
+        .jumbotron {
+            background: url('https://picsum.photos/1400/700?random');
+            color: #fff;
+            height: 600px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .bg {
+            /* The image used */
+            background: linear-gradient( rgb(51, 51, 51), rgba(0, 0, 0, 0)), url("css/cover.jpg");
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: graysale(100%);
+            border-bottom: 2px solid #001263;
+            color: #fff;
+            height: 600px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .button {
+            background-color: #00098d;
+            border: 1px solid #00098d;
+            color: white;
+            padding: 8px 35px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 40px 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: all 0.5s;
+        }
+        
+        .button:hover {
+            background-color: #fff;
+            border: 2px solid #00098d;
+            color: #00098d;
+            text-decoration: none;
+            transition: all 0.5s;
+            box-shadow: 0 0 35px #00098d;
+        }
+    }
+    #about {
+        padding-top: 20%;
+    }
+    a.link,
+    a.link:hover,
+    a.link:active,
+    a.link:visited {
+        background-color: #fff;
+        display: block;
+        margin-top: 20px;
+        border-align: center;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+    }
+    ul.b {
+        list-style-position: inside;
+        padding-left: 20px;
+    }
+    .live-now-text {
+        -webkit-animation: live 2s infinite;
+        animation: live 2s infinite;
+        font-weight: 700;
+        font-family: 'roboto', sans-serif;
+        line-spacing: 1px;
+        text-align: center;
+        font-size: 40px;
+    }
+    @-webkit-keyframes live {
+        0% {
+            color: yellow
+        }
+        
+        rgb(34,
+        0,
+        66) 50% {
+            color: orange
+        }
+        
+        100% {
+            color: rgb(1, 2, 107)
+        }
+    }
+    @keyframes live {
+        0% {
+            color: rgb(0, 132, 255);
+        }
+        
+        50% {
+            color: rgb(0, 80, 146)
+        }
+        
+        100% {
+            color: rgb(0, 1, 66);
+        }
+    }
+    @media (max-width: 991px) {
+        .bg {
+            height: 25%;
+        }
+        
+        .ssc {
+            font-size: 50px;
+        }
+        
+        #about {
+            padding-top: 9%;
+        }
+        
+        ul.b {
+            list-style-position: inside;
+            padding-left: 30px;
+        }
+    }
+    @media (max-width: 640px) {
+        .bg {
+            height: 50%;
+        }
+        
+        .ssc {
+            font-size: 45px;
+        }
+        
+        #about {
+            padding-top: 20%;
+        }
+        
+        ul.b {
+            list-style-position: inside;
+            padding-left: 20px;
+        }
+    }
+    .fa-facebook {
+        padding: 10px 15px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        font-size: 22px;
+        border: 1px solid transparent;
+    }
+    .fa-facebook:hover {
+        background-color: #3d5b99;
+        border-radius: 50%;
+        border: 1px solid #001263;
+        box-shadow: 0 0 10px #001263
+    }
+    .fa-instagram {
+        padding: 10px 12px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        font-size: 22px;
+        border: 1px solid transparent;
+    }
+    .fa-instagram:hover {
+        background-color: #eb8231;
+        border-radius: 50%;
+        border: 1px solid #001263;
+        box-shadow: 0 0 10px #001263
+    }
+    .fa-envelope {
+        padding: 10px 10px;
+        -o-transition: .5s;
+        -ms-transition: .5s;
+        -moz-transition: .5s;
+        -webkit-transition: .5s;
+        transition: .5s;
+        font-size: 22px;
+        border: 1px solid transparent;
+    }
+    .fa-envelope:hover {
+        background-color: #ff4444;
+        border-radius: 50%;
+        border: 1px solid #001263;
+        box-shadow: 0 0 10px #001263
+    }
     </style>
 
 </head>
+
 <body>
 
 
-<div id="loader-wrapper"><div id="loader"></div><div class="loader-section section-left"></div>
-   <div class="loader-section section-right"></div></div>
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
 
 
-  <div class="navbar navbar-expand-sm bsnav bsnav-sticky bsnav-sticky-slide"><a class="navbar-brand" href="index.html">ieee hyd section</a>
-      <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse justify-content-sm-end">
-         <ul class="navbar-nav navbar-mobile mr-0">
-<li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
-    <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0);">ABOUT US <i class="caret"></i></a>
-            <ul class="navbar-nav">
- <li class="nav-item"><a class="nav-link" href="about.html">ABOUT SSC'19</a></li>
- <li class="nav-item"><a class="nav-link" href="execom.html">EXECOM</a></li>
+    <div class="navbar navbar-expand-sm bsnav bsnav-sticky bsnav-sticky-slide"><a class="navbar-brand" href="index.html">ieee hyd section</a>
+        <button class="navbar-toggler toggler-spring"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse justify-content-sm-end">
+            <ul class="navbar-nav navbar-mobile mr-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                <li class="nav-item dropdown"><a class="nav-link" href="JavaScript:void(0);">ABOUT US <i class="caret"></i></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="about.html">ABOUT SSC'19</a></li>
+                        <li class="nav-item"><a class="nav-link" href="execom.html">EXECOM</a></li>
 
- <li class="nav-item"><a class="nav-link" href="team.html">TEAM</a></li>
-              <li class="nav-item"><a class="nav-link" href="CodeOfConduct.html">CODE OF CONDUCT</a></li>
-</ul></li>
-<li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
-<li class="nav-item active"><a class="nav-link" href="">SB-AWARDS</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">OUR GALLERY</a></li>
-<li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORSHIP</a></li>
-          <li class="nav-item"><a class="nav-link" href="index.html">REGISTER</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-</ul>
-      </div>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="schedule.html">SCHEDULE</a></li>
+                <li class="nav-item active"><a class="nav-link" href="">SB-AWARDS</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">OUR GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="sponsors.html">SPONSORSHIP</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.html">REGISTER</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
     </div>
 
 
     <div class="bg">
-      <div class="container">
-<br><br><br>
-        <p style="text-align:center;font-size:38px;font-weight:400;"><b>LEAD, VIBRANT</b> AND <b>EMERGING</b><br/>STUDENT BRANCHES</p>
-
-      </div>
-
-    </div>
-     
-      <div id="about" style="">
         <div class="container">
-  <h2>SSC 2018 Awards</h2><br>
-      <div class="paragraph">
-        
-          <br /><strong>Lead Student Branch Award 
-              (Not in any order)
-              </strong><br/>
-          <ul class= "b">
-            <li>Jayamukhi Institute of Technology & Science</li>
-            <li>Gokaraju Rangaraju Institute of Engineering & Technology</li>
-            <li>Muffakham Jah College of Engineering & Technology</li>
-           
-          </ul>
-               <strong>Vibrant Student Branch Award</strong>
-               <ul class="b">
-                 <li>Vaagdevi College of Engineering</li>
-                 </ul>
-                 <strong>Emerging Student Branch Award</strong>
-               <ul class="b">
-                  <li>Vaagdevi Engineering College</li>
-                 <li>Vaagdevi Engineering College</li>
-                 </ul>
-      </div>
-<br>
-<h2>SSC 2017 Awards</h2><br>
-      <div class="paragraph">
-        
-          <br /><strong>Vibrant Student Branch Award
-              </strong><br/>
-          <ul class= "b">
-            <li>G. Pulla Reddy Engineering College</li>
-            <li>Sreenidhi Institute of Science and Technology </li>
-            <li>Vignan Institute of  Technology and Science</li>
-            <br />
-          </ul>
-               <strong>Emerging Student Branch Award</strong>
-               <ul class="b">
-                 <li>Chaitanya Bharathi Institute of Technology</li>
-                
-                 <li>MVSR Engineering College, Hyderabad</li>
-                 </ul>
-      </div>
-<br>
-<h2>SSC 2016 Awards</h2><br>
-      <div class="paragraph">
-        
-          <br /><strong>Vibrant Student Branch Award
-              </strong><br/>
-          <ul class= "b">
-            <li>Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad</li>
-            <br />
-          </ul>
-               <strong>Emerging Student Branch Award</strong>
-               <ul class="b">
-                 <li>MVSR Engineering College, Hyderabad</li>
-                 </ul>
-      </div>
-<br>
+            <br><br><br>
+            <p style="text-align:center;font-size:38px;font-weight:400;"><b>IEEE Hyderabad Section - Student Branch Awards </b><br/> Call for Nominations</p>
+
         </div>
-      </div>
-    <div class="bsnav-mobile">
-      <div class="bsnav-mobile-overlay"></div>
-      <div class="navbar"></div>
+
     </div>
 
-<footer class="footer-basic-centered">
-<div>	<p class="footer-company-motto">
-&nbsp IEEE Hyderabad Section is one of the most active sections of IEEE in India. IEEE was formally introduced in Hyderabad, in June 1981, when a group of engineers in Hyderabad decided to form an IEEE sub-Section here. This sub-Section was rapidly elevated to a full Section, in 1984 (the year of IEEE Centenary celebrations)</p>
-</div>
-<hr style="background:grey;" align="center">
-<div>		<p class="footer-links"><!--
+
+
+    <div id="about" style="">
+        <div class="container">
+            <div class="paragraph">
+                <h3><b>Introduction</b></h3><br>
+                <p style="text-align:justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IEEE Hyderabad Section recognizes the role of Student Branch (SB) in representing and fulfilling the needs of the members and the mission of Hyderabad Section, R10 and IEEE. The IEEE Student Branch Award
+                    is given to a SB that has maintained good membership, volunteering opportunities, and helped in the promotion of IEEE vision and mission. These awards help to improve the membership development, satisfaction, and retention.</p>
+                <br>
+                <p> The Student Branch Awards are given to recognize the contribution made by SBs for a period from <b>1</b><sup>st</sup><b> November <b>2018</b> to <b>31<sup>st</sup> July 2019.</b></b>
+                </p>
+                <br>
+                <br>
+                <br />
+                <h3><strong>Awards
+            </strong></h3><br/>
+
+                <ol>
+                    <li><b><i>Lead Student Branch Award</i></b> - to recognize and encourage the SBs that continued to be active after reception of the vibrant award and continuously participating in SB exhibits yearly</li>
+                    <li><b><i>Vibrant Student Branch Award</i></b> - to recognize and encourage SBs above three years old that fulfilled IEEE mission and vision by organizing admirable activities</li>
+                    <li><b><i>Emerging Student Branch Award</i></b> - to recognize and encourage SBs established in recent three years for their notable activities</li>
+                </ol>
+                <br>
+                <br>
+                <h3><b>Purpose</b></h3><br>
+                <p style="text-align:justify;">&nbsp;&nbsp;The purpose of these awards is to identify SBs that has conducted quality events, workshops, projects, etc. for the benefit of students.</p>
+                <br>
+                <br>
+                <h3><b>Scope</b></h3><br>
+                <p style="text-align:justify;">&nbsp;&nbsp;One award under every category for every year. However the final decision is taken by the jury members.</p>
+                <br>
+                <br>
+                <h3><b>Eligibility</b></h3><br>
+
+                <ul class="b">
+                    <li>Any IEEE SB within Hyderabad Section is eligible to contest for these awards</li>
+                    <li>Outstanding initiatives and performance in organizing activities</li>
+                    <li><b>The SB should not be the recipient of any of the above awards in the past two years</b></li>
+                    <li>The SB must have organized <b>at least six activities</b> in the given time frame</li>
+                </ul>
+
+                <br>
+                <br>
+                <h3><b>Judging Criteria</b></h3><br>
+                <p style="text-align:justify;">The student branch exhibits will be evaluated by the panel of judges on following criteria:-</p>
+                <ul class="b">
+                    <li>Regularity of events conduction at their SBs</li>
+                    <li>Outreach of events to the student members</li>
+                    <li>SB’s Membership growth and retention rate</li>
+                    <li>Effective presentation at the exhibits</li>
+                    <li>Sustenance of IEEE Chapters/ Affinity groups if any etc</li>
+                </ul>
+                <p>In precise, the SB that lives up to the motto of adhering to the IEEE's mission of <b>"Advancing Technology for Humanity" </b>will be awarded.</p>
+                <br>
+                <br>
+                <h3><b>Award Presentation </b></h3><br>
+                <p style="text-align:justify;">&nbsp;&nbsp;The awards will be announced in the valedictory of SSC '19 and the certificates will be presented during the Annual General body Meeting (<b>AGM</b>) of IEEE Hyderabad Section.</p>
+                <br>
+                <br>
+                <h3><b>Schedule</b></h3><br>
+                <p>Call for Nominations: 27<sup>th</sup> July 2019</p><br>
+                <p>Submission Deadline: 05<sup>th</sup> August 2019</p><br>
+                <p>Exhibits Date: 10<sup>th</sup> August 2019</p><br>
+                <br><br>
+
+                <h3><b>Guidelines</b></h3>
+
+                <ol>
+                    <li>Participation in the exhibits is through nomination only.</li>
+                    <li>Student Branch can showcase their branch activities using charts, photographs or any other presentation material (restricted to maximum FOUR A3 size posters).</li>
+                    <li>Student branches are recommended to carry their own resources and tools required for displaying their exhibits.</li>
+                    <li>Presentations through projectors are strictly not allowed.</li>
+                    <li>Any disturbance or discrepancies caused regarding the space allotted for stalls at the exhibition area will not be encouraged.</li>
+                    <li>It is mandatory for the students representing their student branch at the exhibition area to carry their IEEE membership card and college ID otherwise they are not permitted inside.</li>
+                    <li>Only 4 IEEE members from a student branch are allowed at the exhibition area to help in the process of arranging the stall.</li>
+                    <li>Only 2 executive committee members from a student branch are permitted to present the exhibit (Student Network Members and Branch Counselors are not encouraged during the assessment of exhibits).</li>
+                    <li>The Exhibitors must maintain a good decorum at the exhibit area and also with the judges.</li>
+                    <li>SBs are obligated to present only the events that were conducted during the specified time period.</li>
+                    <li>Ensure L31 reporting is up to date at the time of submission of nomination.</li>
+                    <li>Reports of all the events showcased by the SB should be uploaded in the Google form.</li>
+                    <li>Appealing for rejudgment is strictly not encouraged.</li>
+                    <li>The event organizers at any stage of the competition can disqualify the teams if the teams are found offensive.</li>
+                    <li>The presenters have to follow <b>IEEE Code of Ethics.</b></li>
+                </ol>
+                <br>
+                <div id="about" style="">
+                    <div class="container">
+                        <h2>SSC 2018 Awards</h2><br>
+                        <div class="paragraph">
+
+                            <br /><strong>
+                      Lead Student Branch Award
+                      (Not in any order)
+                  </strong><br />
+                            <ul class="b">
+                                <li>Jayamukhi Institute of Technology & Science</li>
+                                <li>Gokaraju Rangaraju Institute of Engineering & Technology</li>
+                                <li>Muffakham Jah College of Engineering & Technology</li>
+
+                            </ul>
+                            <strong>Vibrant Student Branch Award</strong>
+                            <ul class="b">
+                                <li>Vaagdevi College of Engineering</li>
+                            </ul>
+                            <strong>Emerging Student Branch Award</strong>
+                            <ul class="b">
+                                <li>Vaagdevi Engineering College</li>
+                                <li>Matrusri Engineering College</li>
+
+                            </ul>
+                        </div>
+                        <br>
+                        <h2>SSC 2017 Awards</h2><br>
+                        <div class="paragraph">
+
+                            <br /><strong>
+                      Vibrant Student Branch Award
+                  </strong><br />
+                            <ul class="b">
+                                <li>G. Pulla Reddy Engineering College</li>
+                                <li>Sreenidhi Institute of Science and Technology </li>
+                                <li>Vignan Institute of Technology and Science</li>
+                                <br />
+                            </ul>
+                            <strong>Emerging Student Branch Award</strong>
+                            <ul class="b">
+                                <li>Chaitanya Bharathi Institute of Technology</li>
+
+                                <li>MVSR Engineering College, Hyderabad</li>
+                            </ul>
+                        </div>
+                        <br>
+                        <h2>SSC 2016 Awards</h2><br>
+                        <div class="paragraph">
+
+                            <br /><strong>
+                      Vibrant Student Branch Award
+                  </strong><br />
+                            <ul class="b">
+                                <li>Gokaraju Rangaraju Institute of Engineering and Technology, Hyderabad</li>
+                                <br />
+                            </ul>
+                            <strong>Emerging Student Branch Award</strong>
+                            <ul class="b">
+                                <li>MVSR Engineering College, Hyderabad</li>
+                            </ul>
+                        </div>
+                        <br>
+
+
+
+                        <center><a href="https://forms.gle/MPfcSMYqLptu5fJE8" class="button" target="_blank">APPLY HERE</a></center>
+
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="bsnav-mobile">
+                <div class="bsnav-mobile-overlay"></div>
+                <div class="navbar"></div>
+            </div>
+
+            <footer class="footer-basic-centered">
+                <div>
+                    <p class="footer-company-motto">
+                        &nbsp;IEEE Hyderabad Section is one of the most active sections of IEEE in India. IEEE was formally introduced in Hyderabad, in June 1981, when a group of engineers in Hyderabad decided to form an IEEE sub-Section here. This sub-Section was rapidly elevated
+                        to a full Section, in 1984 (the year of IEEE Centenary celebrations)</p>
+                </div>
+                <hr style="background:grey;" align="center">
+                <div>
+                    <p class="footer-links">
+                        <!--
 <a href="mailto:info@ieeehydssc.org">info@ieeehydssc.org |</a>    
 <a href="http://www.ieeehydssc.org/home.html">Home</a> |
 <a href="http://www.ieeehydssc.org/register.html">Register</a> |
 <a href="http://www.ieeehydssc.org/contact.html">Contact</a> |
 <a href="http://www.ieeehydssc.org/privacy-policy.html">Privacy Policy</a> |
 <a href="http://www.ieeehydssc.org//sitemap.xml">Sitemap</a> -->
-<a href="https://www.facebook.com/IEEEHYDSSC/" target="blank"><i class="fa fa-facebook"></i></a> 
-<a href="https://www.instagram.com/section_student_congress_2019/" target="_blank"><i class="fa fa-instagram"></i></a> 
-<a href="mailto:sac@ieee.org"><i class="fa fa-envelope"></i></a> 
-</p>
-</div>
+                        <a href="https://www.facebook.com/IEEEHYDSSC/" target="blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/section_student_congress_2019/" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="mailto:sac@ieee.org"><i class="fa fa-envelope"></i></a>
+                    </p>
+                </div>
 
-<div>	<p class="footer-company-name">
-© 2019 IT Team of IEEE Hyderabad Section Student Congress 2019 | All Rights Reserved </p>
-</div>
+                <div>
+                    <p class="footer-company-name">
+                        © 2019 IT Team of IEEE Hyderabad Section Student Congress 2019 | All Rights Reserved </p>
+                </div>
 
-		</footer>
-
-  
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://rawgit.com/fitodac/bsnav/master/dist/bsnav.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-	<script src="js/main.js"></script>
-  <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
-<!-- Custom js -->
-	<script type="text/javascript" src="js/custom.js"></script>
+            </footer>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+            <script src="https://rawgit.com/fitodac/bsnav/master/dist/bsnav.min.js"></script>
+            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script>
+                window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+            </script>
+            <script src="js/main.js"></script>
+            <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+            <!-- Custom js -->
+            <script type="text/javascript" src="js/custom.js"></script>
 
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function() {
+                    // Add smooth scrolling to all links
+                    $("a").on('click', function(event) {
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+                        // Make sure this.hash has a value before overriding default behavior
+                        if (this.hash !== "") {
+                            // Prevent default anchor click behavior
+                            event.preventDefault();
+
+                            // Store hash
+                            var hash = this.hash;
+
+                            // Using jQuery's animate() method to add smooth page scroll
+                            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                            $('html, body').animate({
+                                scrollTop: $(hash).offset().top
+                            }, 800, function() {
+
+                                // Add hash (#) to URL when done scrolling (default click behavior)
+                                window.location.hash = hash;
+                            });
+                        } // End if
+                    });
+                });
+            </script>
 </body>
+
 </html>
